@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+   var game = ["rock", "paper", "scissors"];
+
+   var min=0;
+   var max=3;
+   var random =Math.floor(Math.random() * (+max - +min)) + +min;
+
+var userNum = prompt("Rock, Paper, Scissors....:");
+
+if (userNum.toLowerCase() === 'rock'){
+    var userNum = 0;
+}
+else if (userNum.toLowerCase() ==='paper'){
+    var userNum = 1;
+}
+else {
+    var userNum = 2; 
+}
+
+if (random == userNum) {
+    document.querySelector("You tied!");
+}
+else if (random == 0) {
+    if (user == 1){
+        alert(" You win!");
+    }
+    else {
+        alert("You lose!");
+    }
+    
+}
+
+console.log(userNum);
+    </script>
+</body>
+</html>
